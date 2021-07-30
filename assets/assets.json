@@ -1,0 +1,1234 @@
+{
+	"settings":{
+		"stageItemWidth"	: 505,
+		"comersettings"		: {
+			"comer1"	: {
+				"manhana" : { 
+					"key":"comer-desayuno", 
+					"points":5,
+					"dieta" : ["C","C","P","V","V","P","P"],
+					"totalItems":{
+						"P":2,
+						"C":2,
+						"V":1
+					}
+				},
+				"tarde" 	: { 
+					"key":"comer-almuerzo", 
+					"points":5,
+					"dieta" : ["V","V","C","C","P","P","V"],
+					"totalItems":{
+						"P":2,
+						"C":2,
+						"V":2
+					}
+				},
+				"noche" 	: { 
+					"key":"comer-cena", 
+					"points":5,
+					"dieta" : ["V","V","C","C","P","P","V"],
+					"totalItems":{
+						"P":1,
+						"C":2,
+						"V":2
+					}
+				},
+				"norecom" : { 
+					"key":"comer-norecomendables", 
+					"points":-10,
+					"dieta" : ["N","N","N","N","N"]
+				}
+			},
+			"comer2"	: {
+				"titleGame":{
+					"first":"Arma tu plato paso a paso",
+					"second":"hasta completar una comida rica y sana:"
+				},
+				"manhana" : { 
+					"keys":["comer-platos","manhana-cara","manhana-boca","manhana-nariz","manhana-ojos","manhana-pelo"], 
+					"points":5,
+					"dieta" :{
+						"pelo"	: ["C","N","P","C"],
+						"ojos"	: ["V","P","V","N","N","P"],
+						"nariz"	: ["N","V","P","N","V","C"],
+						"boca"	: ["V","V","V","N","P"],
+						"cara"	: ["P","C","C","C","P"]
+					},
+					"totalItems":{
+						"P":2,
+						"C":2,
+						"V":1,
+						"N":0
+					}
+				},
+				"tarde" 	: { 
+					"keys":["comer-platos","tarde-cara","tarde-boca","tarde-nariz","tarde-ojos","tarde-orejas","tarde-pelo"], 
+					"points":5,
+					"dieta" :{
+						"pelo"	: ["P","C","C","N","C","V"],
+						"orejas": ["V","C","V","V","P"],
+						"ojos"	: ["N","V","N","V","P","P"],
+						"nariz"	: ["N","P","C","P","V","V"],
+						"boca"	: ["P","P","V","N","V"],
+						"cara"	: ["V","P","C","P","P"]
+					},
+					"totalItems":{
+						"P":2,
+						"C":2,
+						"V":2,
+						"N":0
+					}
+				},
+				"noche" 	: { 
+					"keys"	:["comer-platos","noche-cara","noche-boca","noche-nariz","noche-ojos","noche-pelo"], 
+					"points":5,
+					"dieta" :{
+						"pelo"	: ["V","N","V","C","C"],
+						"ojos"	: ["V","N","N","P","N","V"],
+						"nariz"	: ["V","V","V","N","P","P"],
+						"boca"	: ["P","V","P","P","P","P"],
+						"cara"	: ["C","C","P","C","C"]
+					},
+					"totalItems":{
+						"P":1,
+						"C":2,
+						"V":2,
+						"N":0
+					}
+				},
+				"norecom" : { 
+					"key":"comer-norecomendables", 
+					"points":-10,
+					"dieta" : ["N","N","N","N","N"]
+				},
+				"partesName":{
+					"platos"	: "Plato",
+					"cara"		: "Cara",
+					"boca"		: "Boca",
+					"nariz"		: "Nariz",
+					"ojos"		: "Ojos",
+					"orejas"	: "Orejas",
+					"pelo"		: "Pelo"
+				},
+				"partes":["cara","boca","nariz","ojos","orejas","pelo"],
+				"partesPosiciones":{
+					"platos": {
+						"x":0,
+						"y":0
+					},
+					"cara"	: {
+						"x":0,
+						"y":0
+					},
+					"boca"	: {
+						"x":0,
+						"y":105
+					},
+					"nariz"	: {
+						"x":0,
+						"y":30
+					},
+					"ojos"	: {
+						"x":0,
+						"y":-70
+					},
+					"orejas": {
+						"x":0,
+						"y":-25
+					},
+					"pelo"	: {
+						"x":0,
+						"y":-160
+					}
+				}
+			}
+		},
+		"banharsetting":{			
+			"banhar2":{
+				"bodyparts":[
+					{
+						"x": 118,
+						"y": 75,
+						"width": 150,
+						"height": 150,
+						"parte":"Cabeza",
+						"side" : "front"
+					},
+					{
+						"x": 160,
+						"y": 211,
+						"width": 70,
+						"height": 80,
+						"parte":"Pecho",
+						"side" : "front"
+					},
+					{
+						"x": 134,
+						"y": 300,
+						"width": 120,
+						"height": 80,
+						"parte":"Genitales",
+						"side" : "front"
+					},
+					{
+						"x": 0,
+						"y": 193,
+						"width": 170,
+						"height": 80,
+						"parte":"Brazo\nIzquierdo",
+						"side" : "back"
+					},
+					{
+						"x": 226,
+						"y": 193,
+						"width": 170,
+						"height": 80,
+						"parte":"Brazo\nIzquierdo",
+						"side" : "front"
+					},
+					{
+						"x": 155,
+						"y": 180,
+						"width": 76,
+						"height": 60,
+						"parte":"Cuello",
+						"side" : "front"
+					},
+					{
+						"x": 127,
+						"y": 209,
+						"width": 137,
+						"height": 56,
+						"parte":"Axilas",
+						"side" : "front"
+					},
+					{
+						"x": 121,
+						"y": 445,
+						"width": 137,
+						"height": 56,
+						"parte":"Pies",
+						"side" : "front"
+					},
+					{
+						"x": 128,
+						"y": 350,
+						"width": 137,
+						"height": 120,
+						"parte":"Piernas",
+						"side" : "front"
+					}			
+				]
+			}
+		},
+		"dormirSettings":{
+			"dormir1":{
+				"points"		:10,
+				"tiposPrendas"	:["medias","superior","calzado","inferior","interior"],
+				"timerDuration"	:30,
+				"itemSpeed"		:-350,
+				"itemSpeedInc"	:-100,
+				"itemWidth"		:190,
+				"itemHeight"	:272,
+				"maskWidth"		:503,
+				"maskHeight"	:292,
+				"prendas"		:{
+					"ninho"	:{
+						"key"	:"ninho-dormir",
+						"tipo"	:["interior","inferior","calzado","superior","superior","medias","superior","inferior","superior","inferior","calzado","superior","superior","interior","medias","inferior"]
+					},
+					"ninha":{
+						"key"	:"ninha-dormir",
+						"tipo"	:["interior","inferior","calzado","superior","superior","medias","superior","inferior","superior","inferior","calzado","superior","superior","interior","medias","inferior"]
+					},
+					"otros":{
+						"key"	:"otros-dormir",
+						"tipo"	:["otros","otros","otros","otros","otros"]
+					}
+				}
+			}
+		}
+	},
+		"dormirsettings":{			
+			"dormir2":{
+				"bodyparts":[
+					
+				]
+			}
+		},
+	"alertshome":{
+		"timeoutmessage"	: {
+			"top"			: "¡Holaaaa! ¿Todavía estás aquí?",
+			"bottom"		: "Sigamos jugando"
+		},
+		"changecharacterfelixmessage"	:{
+			"top"			: "¿Quieres jugar con Felix?",
+			"bottom"		: "Cambia de personaje cuando tú quieras"
+		},
+		"changecharactersusanamessage"	:{
+			"top"			: "¿Quieres jugar con Susana?",
+			"bottom"		: "Cambia de personaje cuando tú quieras"
+		},
+		"susanaselectedmessage"	:{
+			"top"			: "¡Soy Susana y estoy feliz de jugar contigo!",
+			"bottom"		: "Vuelve con Félix en cualquier momento"
+		},
+		"felixselectedmessage"	:{
+			"top"			: "¡Soy Félix y estoy feliz de jugar contigo!",
+			"bottom"		: "Vuelve con Susana en cualquier momento"
+		}
+	},
+	"preguntas":{
+		"puntos":10,
+		"dormir":[
+			{
+				"pregunta":"Antes de ir a dormir debes:",
+				"opciones":[
+					{
+						"opcion":"Lavarte los dientes",
+						"correcta":true
+					},
+					{
+						"opcion":"Salir a caminar",
+						"correcta":false
+					},
+					{
+						"opcion":"Jugar",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¿Cuántas horas al día <br>deben dormir los niños?",
+				"opciones":[
+					{
+						"opcion":"10 horas",
+						"correcta":true
+					},
+					{
+						"opcion":"5 horas",
+						"correcta":false
+					},
+					{
+						"opcion":"16 horas",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"Cuando te acuestas a dormir...",
+				"opciones":[
+					{
+						"opcion":"Descansas y recuperas energías para el otro día",
+						"correcta":true
+					},
+					{
+						"opcion":"Lo haces porque lo dicen tus papás",
+						"correcta":false
+					},
+					{
+						"opcion":"Pierdes el tiempo que usarías para jugar",
+						"correcta":false
+					}
+				],
+				"pista":""
+			}
+		],
+		"banhar":[
+			{
+				"pregunta":"¿Cuándo se bañan<br> los niños?",
+				"opciones":[
+					{
+						"opcion":"Todos los días",
+						"correcta":true
+					},
+					{
+						"opcion":"Una vez a la semana",
+						"correcta":false
+					},
+					{
+						"opcion":"De vez en cuando",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¿Para qué se bañan<br> los niños?",
+				"opciones":[
+					{
+						"opcion":"Para protegerse de gérmenes y bacterias",
+						"correcta":true
+					},
+					{
+						"opcion":"Para oler bien ",
+						"correcta":false
+					},
+					{
+						"opcion":"Es mejor si no se bañan",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¿Qué partes del cuerpo<br> debes lavar?",
+				"opciones":[
+					{
+						"opcion":"Todo el cuerpo: cabeza, brazos, axilas, pecho, ombligo, genitales, piernas y pies",
+						"correcta":true
+					},
+					{
+						"opcion":"Solo el pelo y la cara",
+						"correcta":false
+					},
+					{
+						"opcion":"Solo la cabeza, brazos y piernas",
+						"correcta":false
+					}
+				],
+				"pista":""
+			}
+		],
+		"comer":[
+			{
+				"pregunta":"Escoge un grupo de<br> proteínas",
+				"opciones":[
+					{
+						"opcion":"Carne, pescado, huevo, leche, queso, lentejas y fríjoles",
+						"correcta":true
+					},
+					{
+						"opcion":"Pan, lechuga, tomate, arepa, gaseosa",
+						"correcta":false
+					},
+					{
+						"opcion":"Fresa, albóndiga, arroz, yuca, aguacate",
+						"correcta":false
+					}
+				],
+				"pista":"Las proteínas son nutrientes que vienen de alimentos animales, lácteos y granos."
+			},
+			{
+				"pregunta":"¿Para qué sirven las<br> proteínas?",
+				"opciones":[
+					{
+						"opcion":"Nos dan fuerza, nos ayudan a crecer y a tener músculos resistentes",
+						"correcta":true
+					},
+					{
+						"opcion":"Nos ayudan a mejorar el oído y la voz ",
+						"correcta":false
+					},
+					{
+						"opcion":"Para nada, no son necesarias ",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¡Escoge un grupo de<br> carbohidratos! ",
+				"opciones":[
+					{
+						"opcion":"Cereal, pan, arroz, pasta, papa, yuca, plátano, arepa ",
+						"correcta":true
+					},
+					{
+						"opcion":"Manzana, lechuga, leche, huevo, pescado",
+						"correcta":false
+					},
+					{
+						"opcion":"Atún, queso, mazorca, banano, fríjol",
+						"correcta":false
+					}
+				],
+				"pista":"Los carbohidratos son el combustible diario de las células del cuerpo y las encargadas de proporcionar la energía"
+			},
+			{
+				"pregunta":"¿Para qué sirven los<br> carbohidratos?",
+				"opciones":[
+					{
+						"opcion":"Nos llenan de energía para vivir y realizar las actividades del día",
+						"correcta":true
+					},
+					{
+						"opcion":"Sólo sirven para mejorar la visión",
+						"correcta":false
+					},
+					{
+						"opcion":"No sirven para nada ",
+						"correcta":false
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¡Escoge un grupo de<br> vitaminas y minerales! ",
+				"opciones":[
+					{
+						"opcion":"Espinacas, zanahoria, fresa, manzana, naranja, limón, tomate",
+						"correcta":true
+					},
+					{
+						"opcion":"Pan, galleta, gaseosa, salchicha, miel",
+						"correcta":false
+					},
+					{
+						"opcion":"Agua, helado, confite, sal, vinagre",
+						"correcta":false
+					}
+				],
+				"pista":"Las vitaminas y minerales son nutrientes esenciales para el buen funcionamiento del cuerpo. Encuéntralos en frutas y verduras."
+			},
+			{
+				"pregunta":"¿Cuántas veces debes<br> comer al día?",
+				"opciones":[
+					{
+						"opcion":"Dos veces: desayuno y comida",
+						"correcta":false
+					},
+					{
+						"opcion":"Solo por la noche",
+						"correcta":false
+					},
+					{
+						"opcion":"Cinco veces: desayuno, media mañana, almuerzo, media tarde y comida",
+						"correcta":true
+					}
+				],
+				"pista":""
+			},
+			{
+				"pregunta":"¿Qué debes hacer después<br> de comer?",
+				"opciones":[
+					{
+						"opcion":"Lavarme los dientes",
+						"correcta":true
+					},
+					{
+						"opcion":"Salir a jugar",
+						"correcta":false
+					},
+					{
+						"opcion":"Bañarme",
+						"correcta":false
+					}
+				],
+				"pista":""
+			}
+		]
+	},
+	"messagespop":{
+		"instrucciones":{
+			"home":{
+				"titulo"	:"",
+				"contenido"	:"",
+				"boton"		:""
+			},
+			"comer1":{
+				"manhana"	:{
+					"titulo"	:"¡Es hora de desayunar!",
+					"contenido"	:"Y hoy tú escoges los ingredientes para un desayuno delicioso<br> y sano. <strong>¡Recuerda!</strong> Un desayuno balanceado tiene:<br><br><img src='assets/images/comer/instruccion-desayuno.png'><div class='teclado spritesheet'></div>",
+					"boton"		:"¡A jugar!"
+				},
+				"tarde"	:{
+					"titulo"	:"¡Hoy el chef eres tú!",
+					"contenido"	:"Selecciona los ingredientes para preparar un almuerzo rico<br>y sano. <strong>¡Recuerda!</strong> Una almuerzo balanceado tiene:<br><br><img src='assets/images/comer/instruccion-almuerzo.png'><div class='teclado spritesheet'></div>",
+					"boton"		:"¡A jugar!"
+				},				
+				"noche"	:{
+					"titulo"	:"¡A comer!",
+					"contenido"	:"El primer paso es, escoger los ingredientes para una comida<br> rica y sana. <strong>¡Recuerda!</strong> Una comida balanceada tiene:<br><br><img src='assets/images/comer/instruccion-cena.png'><div class='teclado spritesheet'></div>",
+					"boton"		:"¡A jugar!"
+				},				
+				"fin"	:{
+					"titulo"	:"¡Muy bien, ahora... a la mesa!",
+					"contenido"	:"¿Quien dijo que servir la comida era aburrido?<br><br>Llegó el momento de demostrar tu creatividad.<br>Crea tu plato y demuestra que eres un gran chef",
+					"boton"		:"Estoy listo"
+				}
+			},
+			"comer2":{
+				"titulo"	:"¡Muy bien, ahora... a la mesa!",
+				"contenido"	:"¿Quien dijo que servir la comida era aburrido?<br><br>Llegó el momento de demostrar tu creatividad.<br>Crea tu plato y demuestra que eres un gran chef",
+				"boton"		:"Estoy listo"
+			},
+			"banhar1":{
+				"titulo"	:"¡Qué divertido<br> es tomar un baño!",
+				"contenido"	:"<br><br><br>Antes de entrar a la ducha alista todos<br>los elementos necesarios…<br><br><strong>Recuerda:</strong> un buen baño es necesario para estar limpio,<br> oler bien y protegerte de gérmenes y bacterias.<br>¡Tómalo todos los días!",
+				"boton"		:"¡A jugar!"
+			},
+			"banhar2":{
+				"titulo"	:"¡Hora de tomar un baño!",
+				"contenido"	:"Lava muy bien todas las partes del cuerpo<br> que te aparecen en pantalla.</br></br><strong>Recuerda:</strong> si quieres hacer un buen trabajo,</br>todo el cuerpo debes lavar",
+				"boton"		:"¡A jugar!"
+			},
+			"dormir1":{
+				"titulo"	:"<strong>¡Alista tu ropa para mañana!</strong>",
+				"contenido"	:"<br>Antes de dormir, revisa tu closet y seleccione la ropa<br>que usarás mañana.<br><br>No olvides todo lo necesario para salir de casa.<br><br><img src='assets/images/dormir/ropa.png'>",
+				"boton"		:"¡A jugar!"
+			},
+			"dormir2":{
+				"titulo"	:"<strong>¿Qué tal un cuento<br>para ir a dormir?</strong><br>",
+				"contenido"	:"<br><br>¡Escribámoslo juntos!<br></br>Tú podrás convertirte en el creativo de una gran historia</br>",
+				"boton"		:"¡A jugar!"
+			}
+
+
+		}
+	},
+	"images": {
+		"home":[
+			{
+				"name" 			: "btn-home",
+				"path" 			: "images/general/btn-home.png"
+			},
+			{
+				"name" 			: "alertas",
+				"path" 			: "images/home/alertas-rosada.png"
+			},
+			{
+				"name" 			: "icon-drag-tootlip",
+				"path" 			: "images/home/icon-drag-tootlip-bg.png"
+			},
+			{
+				"name" 			: "indicador-caja",
+				"path" 			: "images/home/indicador-caja.png"
+			},
+			{
+				"name" 			: "combo-icon-option",
+				"path" 			: "images/home/combo-icon-option.png"
+			},
+			{
+				"name" 			: "sombra-slide",
+				"path" 			: "images/home/sombra.png"
+			},
+			{
+				"name" 			: "felix-pre",
+				"path" 			: "images/home/avatar-felix-prehome.png"
+			},
+			{
+				"name" 			: "susana-pre",
+				"path" 			: "images/home/avatar-susana-prehome.png"
+			},
+			{
+				"name" 			: "susana-home",
+				"path" 			: "images/home/avatar-susana-home.png"
+			},
+			{
+				"name" 			: "felix-home",
+				"path" 			: "images/home/avatar-felix-home.png"
+			},
+			{
+				"name" 			: "bgPrehome",
+				"path" 			: "images/home/bg-prehome.png"
+			}, 
+			{
+				"name" 			: "icon-drag-game-total",
+				"path" 			: "images/home/icon-drag-game-total-bg.png"
+			}, 
+			{
+				"name" 			: "next-stage",
+				"path" 			: "images/home/sgte-stg.png"
+			}, 
+			{
+				"name" 			: "prev-stage",
+				"path" 			: "images/home/atras-stg.png"
+			}, 
+			{
+				"name" 			: "btn-eliminar-icon-game",
+				"path" 			: "images/home/btn-eliminar-icon-game.png"
+			}, 
+			{
+				"name" 			: "icon-game-bg",
+				"path" 			: "images/home/bg-icon-game.png"
+			}, 
+			{
+				"name" 			: "bg-inicio-home",
+				"path" 			: "images/home/bg-inicio-home.png"
+			},  
+			{
+				"name" 			: "sol",
+				"path" 			: "images/home/sol.png"
+			},  
+			{
+				"name" 			: "luna",
+				"path" 			: "images/home/luna.png"
+			},  
+			{
+				"name" 			: "estrella-1",
+				"path" 			: "images/home/estrella-1.png"
+			},  
+			{
+				"name" 			: "estrella-2",
+				"path" 			: "images/home/estrella-2.png"
+			}, 
+			{
+				"name" 			: "nube-1",
+				"path" 			: "images/home/nube-1.png"
+			}, 
+			{
+				"name" 			: "estrellas",
+				"path" 			: "images/general/estrella.png"
+			}, 
+			{
+				"name" 			: "nube-2",
+				"path" 			: "images/home/nube-2.png"
+			},
+			{
+				"name" 			: "btn-ayuda",
+				"path" 			: "images/general/btn-ayuda.png"
+			},
+			{
+				"name" 			: "bg-caja-mañana",
+				"path" 			: "images/home/bg-caja-manhana-2.png",
+				"containerItems": true,
+				"key"			: "manhana"
+			}, 
+			{
+				"name" 			: "bg-caja-tarde",
+				"path" 			: "images/home/bg-caja-tarde-2.png",
+				"containerItems": true,
+				"key"			: "tarde"
+			}, 
+			{
+				"name" 			: "bg-caja-noche",
+				"path" 			: "images/home/bg-caja-noche-2.png",
+				"containerItems": true,
+				"key"			: "noche"
+			}
+		],
+		"banhar":[
+			{
+				"name" 			: "ducha",
+				"path" 			: "images/banhar/ducha-3.png"
+			},
+			{
+				"name" 			: "burbuja",
+				"path" 			: "images/banhar/burbuja-2.png"
+			},
+			{
+				"name" 			: "gota-ducha",
+				"path" 			: "images/banhar/gota-ducha.png"
+			},
+			{
+				"name" 			: "bg-item-banhar",
+				"path" 			: "images/banhar/bg-items-banhar.png"
+			},
+			{
+				"name" 			: "tooltip-banhar",
+				"path" 			: "images/banhar/tooltip-banhar.png"
+			},
+			{
+				"name" 			: "bg-item-selected-banhar",
+				"path" 			: "images/banhar/bg-selected-items-banhar.png"
+			},
+			{
+				"name" 			: "item-banhar-balon",
+				"path" 			: "images/banhar/item-banhar-balon.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Balón"
+			},
+			{
+				"name" 			: "item-banhar-champu",
+				"path" 			: "images/banhar/item-banhar-champu.png",
+				"item"			: true,
+				"valid"			: true,
+				"tooltipname"	: "Champú"
+			},
+			{
+				"name" 			: "item-banhar-ducha",
+				"path" 			: "images/banhar/item-banhar-ducha.png",
+				"item"			: true,
+				"valid"			: true,
+				"tooltipname"	: "Ducha"
+			},
+			{
+				"name" 			: "item-banhar-flores",
+				"path" 			: "images/banhar/item-banhar-flores.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Flores"
+			},
+			{
+				"name" 			: "item-banhar-gafas",
+				"path" 			: "images/banhar/item-banhar-gafas.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Gafas"
+			},
+			{
+				"name" 			: "item-banhar-jabon",
+				"path" 			: "images/banhar/item-banhar-jabon.png",
+				"item"			: true,
+				"valid"			: true,
+				"tooltipname"	: "Jabón"
+			},
+			{
+				"name" 			: "item-banhar-lapiz",
+				"path" 			: "images/banhar/item-banhar-lapiz.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Lápiz"
+			},
+			{
+				"name" 			: "item-banhar-molinopapel",
+				"path" 			: "images/banhar/item-banhar-molinopapel.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Molino"
+			},
+			{
+				"name" 			: "item-banhar-raqueta",
+				"path" 			: "images/banhar/item-banhar-raqueta.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Raqueta"
+			},
+			{
+				"name" 			: "item-banhar-regalo",
+				"path" 			: "images/banhar/item-banhar-regalo.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Regalo"
+			},
+			{
+				"name" 			: "item-banhar-toalla",
+				"path" 			: "images/banhar/item-banhar-toalla.png",
+				"item"			: true,
+				"valid"			: true,
+				"tooltipname"	: "Toalla"
+			},
+			{
+				"name" 			: "item-banhar-zanahoria",
+				"path" 			: "images/banhar/item-banhar-zanahoria.png",
+				"item"			: true,
+				"valid"			: false,
+				"tooltipname"	: "Zanahoria"
+			}
+		],
+		"comer":[
+			{
+				"name" 			: "toxico",
+				"path" 			: "images/comer/toxico.png"
+			},
+			{
+				"name" 			: "ducha",
+				"path" 			: "images/banhar/ducha-3.png"
+			},
+			{
+				"name" 			: "burbuja",
+				"path" 			: "images/banhar/burbuja-2.png"
+			},
+			{
+				"name" 			: "panel-dieta",
+				"path" 			: "images/comer/panel-dieta.png"
+			},
+			{
+				"name" 			: "panel-dieta-2",
+				"path" 			: "images/comer/panel-dieta-2.png"
+			},
+			{
+				"name" 			: "left-btn",
+				"path" 			: "images/comer/left-btn.png"
+			},
+			{
+				"name" 			: "right-btn",
+				"path" 			: "images/comer/right-btn.png"
+			},
+			{
+				"name" 			: "plato-servido",
+				"path" 			: "images/comer/plato-servido.png"
+			}
+		],
+		"dormir":[
+			{
+				"name"			: "bg-timer",
+				"path"			: "images/dormir/bg-timer.png"
+			},
+			{
+				"name"			: "bg-closet",
+				"path"			: "images/dormir/bg-closet.png"
+			},
+			{
+				"name"			: "bg-items-selected",
+				"path"			: "images/dormir/bg-items-selected.png"
+			},
+			{
+				"name"			: "gancho",
+				"path"			: "images/dormir/gancho.png"
+			}
+		]
+	},
+	"spritesheet":[
+		{
+			"name"	 : "icon-banhar",
+			"path"	 : "spritesheets/icon-drag-banhar.png",
+			"width"	 : 88,
+			"height" : 88,
+			"frames" : 3,
+			"type"   : "drag-item-home",
+			"active" : true,
+			"tooltip": "Bañarse",
+			"game"   : "Bañarse",
+			"total"  : 1
+		},
+		{
+			"name"	 : "icon-comer",
+			"path"	 : "spritesheets/icon-drag-comer.png",
+			"width"	 : 88,
+			"height" : 88,
+			"frames" : 3,
+			"active" : true,
+			"tooltip": "Comer",
+			"game"   : "Comer",
+			"total"  : 3
+		},
+		{
+			"name"	 : "icon-dormir",
+			"path"	 : "spritesheets/icon-drag-dormir.png",
+			"width"	 : 88,
+			"height" : 88,
+			"frames" : 3,
+			"type"   : "drag-item-home",
+			"active" : true,
+			"tooltip": "Dormir",
+			"game"   : "Dormir",
+			"total"  : 1
+		},
+		{
+			"name"	 : "icon-comer-stage",
+			"path"	 : "spritesheets/comer-stage.png",
+			"width"	 : 635,
+			"height" : 425,
+			"frames" : 3
+		},
+		{
+			"name"	 : "icon-dormir-stage",
+			"path"	 : "spritesheets/dormir-stage.png",
+			"width"	 : 635,
+			"height" : 425,
+			"frames" : 3
+		},
+		{
+			"name"	 : "icon-banhar-stage",
+			"path"	 : "spritesheets/banarse-stage.png",
+			"width"	 : 635,
+			"height" : 425,
+			"frames" : 3
+		},
+		{
+			"name"	 : "combo-character",
+			"path"	 : "spritesheets/combo-character.png",
+			"width"	 : 48,
+			"height" : 71,
+			"frames" : 2
+		},
+		{
+			"name"	 : "combo-icon-select",
+			"path"	 : "spritesheets/combo-icon.png",
+			"width"	 : 92,
+			"height" : 63,
+			"frames" : 2
+		},
+		{
+			"name"	 : "btn-jugar-icon-game",
+			"path"	 : "spritesheets/btn-drag-tootlip-jugar.png",
+			"width"	 : 101,
+			"height" : 58,
+			"frames" : 2
+		},
+		{
+			"name"	 : "contador-banhar",
+			"path"	 : "spritesheets/conteo-banhar.png",
+			"width"	 : 215,
+			"height" : 279,
+			"frames" : 3
+		},
+		{
+			"name"	 : "felixsusana-ducha",
+			"path"	 : "spritesheets/felixsusana-ducha.png",
+			"width"	 : 396,
+			"height" : 491,
+			"frames" : 2
+		},
+		{
+			"name"	 : "felix-ducha",
+			"path"	 : "spritesheets/felix-ducha.png",
+			"width"	 : 396,
+			"height" : 491,
+			"frames" : 2
+		},
+		{
+			"name"	 : "susana-ducha",
+			"path"	 : "spritesheets/susana-ducha.png",
+			"width"	 : 396,
+			"height" : 491,
+			"frames" : 2
+		},
+		{
+			"name"	 : "lonchera",
+			"path"	 : "spritesheets/comer-lonchera.png",
+			"width"	 : 263,
+			"height" : 166,
+			"frames" : 2
+		},
+		{
+			"name"	 : "tooltip-comida",
+			"path"	 : "spritesheets/tooltip-comida.png",
+			"width"	 : 217,
+			"height" : 82,
+			"frames" : 4
+		},
+		{
+			"name"	 : "comer-desayuno",
+			"path"	 : "spritesheets/comer-desayuno.png",
+			"width"	 : 122,
+			"height" : 116,
+			"frames" : 7,
+			"dieta"	 : ["C","C","P","V","V","P","P"]
+		},
+		{
+			"name"	 : "comer-almuerzo",
+			"path"	 : "spritesheets/comer-almuerzo.png",
+			"width"	 : 122,
+			"height" : 116,
+			"frames" : 7,
+			"dieta"	 : ["V","V","C","C","P","P","V"]
+		},
+		{
+			"name"	 : "comer-cena",
+			"path"	 : "spritesheets/comer-cena.png",
+			"width"	 : 122,
+			"height" : 116,
+			"frames" : 7,
+			"dieta"	 : ["V","V","C","C","P","P","V"]
+		},
+		{
+			"name"	 : "comer-norecomendables",
+			"path"	 : "spritesheets/comer-norecomendables.png",
+			"width"	 : 122,
+			"height" : 116,
+			"frames" : 5
+		},
+		{
+			"name"	 : "btn-banhar",
+			"path"	 : "spritesheets/btn-banhar.png",
+			"width"	 : 269,
+			"height" : 60,
+			"frames" : 2
+		},
+		{
+			"name"	 : "advertencia",
+			"path"	 : "spritesheets/advertencia.png",
+			"width"	 : 44,
+			"height" : 46,
+			"frames" : 3
+		},
+		{
+			"name"	 : "comer-platos",
+			"path"	 : "spritesheets/mundo2/comer-platos.png",
+			"width"	 : 449,
+			"height" : 449,
+			"frames" : 6
+		},
+		{
+			"name" 	 : "pieza-plato-ok",
+			"path" 	 : "spritesheets/pieza-plato-ok.png",
+			"width"	 : 54,
+			"height" : 42,
+			"frames" : 2
+		},
+				
+
+		{
+			"name"	 : "manhana-boca",
+			"path"	 : "spritesheets/mundo2/desayuno/boca.png",
+			"width"	 : 312,
+			"height" : 149,
+			"frames" : 5
+		},		
+		{
+			"name"	 : "manhana-cara",
+			"path"	 : "spritesheets/mundo2/desayuno/cara.png",
+			"width"	 : 420,
+			"height" : 401,
+			"frames" : 5
+		},		
+		{
+			"name"	 : "manhana-nariz",
+			"path"	 : "spritesheets/mundo2/desayuno/nariz.png",
+			"width"	 : 185,
+			"height" : 156,
+			"frames" : 6
+		},		
+		{
+			"name"	 : "manhana-ojos",
+			"path"	 : "spritesheets/mundo2/desayuno/ojos.png",
+			"width"	 : 307,
+			"height" : 162, 
+			"frames" : 6
+		},		
+		{
+			"name"	 : "manhana-pelo",
+			"path"	 : "spritesheets/mundo2/desayuno/pelo.png",
+			"width"	 : 374,
+			"height" : 233,
+			"frames" : 4
+		},
+
+				
+		{
+			"name"	 : "tarde-boca",
+			"path"	 : "spritesheets/mundo2/almuerzo/boca.png",
+			"width"	 : 312,
+			"height" : 149,
+			"frames" : 5
+		},		
+		{
+			"name"	 : "tarde-cara",
+			"path"	 : "spritesheets/mundo2/almuerzo/cara.png",
+			"width"	 : 420,
+			"height" : 401,
+			"frames" : 5
+		},		
+		{
+			"name"	 : "tarde-nariz",
+			"path"	 : "spritesheets/mundo2/almuerzo/nariz.png",
+			"width"	 : 185,
+			"height" : 156,
+			"frames" : 6
+		},		
+		{
+			"name"	 : "tarde-ojos",
+			"path"	 : "spritesheets/mundo2/almuerzo/ojos.png",
+			"width"	 : 307,
+			"height" : 162, 
+			"frames" : 6
+		},		
+		{
+			"name"	 : "tarde-orejas",
+			"path"	 : "spritesheets/mundo2/almuerzo/orejas.png",
+			"width"	 : 461,
+			"height" : 161,
+			"frames" : 5
+		},
+		{
+			"name"	 : "tarde-pelo",
+			"path"	 : "spritesheets/mundo2/almuerzo/pelo.png",
+			"width"	 : 374,
+			"height" : 233,
+			"frames" : 6
+		},
+
+
+		{
+			"name"	 : "noche-boca",
+			"path"	 : "spritesheets/mundo2/cena/boca.png",
+			"width"	 : 312,
+			"height" : 149,
+			"frames" : 6
+		},		
+		{
+			"name"	 : "noche-cara",
+			"path"	 : "spritesheets/mundo2/cena/cara.png",
+			"width"	 : 420,
+			"height" : 401,
+			"frames" : 5
+		},		
+		{
+			"name"	 : "noche-nariz",
+			"path"	 : "spritesheets/mundo2/cena/nariz.png",
+			"width"	 : 185,
+			"height" : 156,
+			"frames" : 6
+		},		
+		{
+			"name"	 : "noche-ojos",
+			"path"	 : "spritesheets/mundo2/cena/ojos.png",
+			"width"	 : 307,
+			"height" : 162, 
+			"frames" : 6
+		},
+		{
+			"name"	 : "noche-pelo",
+			"path"	 : "spritesheets/mundo2/cena/pelo.png",
+			"width"	 : 374,
+			"height" : 233,
+			"frames" : 5
+		},
+		{
+			"name"	 : "puerta-closet",
+			"path"	 : "spritesheets/puertas-closet.png",
+			"width"	 : 976,
+			"height" : 530,
+			"frames" : 11
+		},
+
+		{
+			"name"	 : "ninha-dormir",
+			"path"	 : "spritesheets/ninha-dormir-2.png",
+			"width"	 : 257,
+			"height" : 292,
+			"frames" : 16
+		},
+		{
+			"name"	 : "ninho-dormir",
+			"path"	 : "spritesheets/ninho-dormir-2.png",
+			"width"	 : 257,
+			"height" : 292,
+			"frames" : 16
+		},
+		{
+			"name"	 : "otros-dormir",
+			"path"	 : "spritesheets/otros-dormir.png",
+			"width"	 : 257,
+			"height" : 292,
+			"frames" : 5
+		},
+		{
+			"name"	 : "calzado-dormir",
+			"path"	 : "spritesheets/calzado-dormir.png",
+			"width"	 : 37,
+			"height" : 32,
+			"frames" : 2
+		},
+		{
+			"name"	 : "inferior-dormir",
+			"path"	 : "spritesheets/inferior-dormir.png",
+			"width"	 : 37,
+			"height" : 32,
+			"frames" : 2
+		},
+		{
+			"name"	 : "interior-dormir",
+			"path"	 : "spritesheets/interior-dormir.png",
+			"width"	 : 37,
+			"height" : 32,
+			"frames" : 2
+		},
+		{
+			"name"	 : "medias-dormir",
+			"path"	 : "spritesheets/medias-dormir.png",
+			"width"	 : 37,
+			"height" : 32,
+			"frames" : 2
+		},
+		{
+			"name"	 : "superior-dormir",
+			"path"	 : "spritesheets/superior-dormir.png",
+			"width"	 : 37,
+			"height" : 32,
+			"frames" : 2
+		}
+	],
+	"audio":[
+		{
+		"name" : "gota-ducha",
+		"path" : "audio/EFECTODUCHA.mp3"	
+		}
+	]
+}

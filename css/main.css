@@ -1,0 +1,383 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #fad400;
+	/*background-image: url('../assets/images/bg-prehome.png');*/
+	background-size: cover;
+	background-position: center center;
+	font:16px/16px 'poppinslight';
+	color: white;
+
+	height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    position: absolute;
+}
+
+body #game{
+	width: 100%;
+	height: 100%;
+	max-width: 1170px;
+	max-height: 824px;
+	background: transparent;
+
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	margin: auto;
+}
+.font-poppinslight{
+	font:16px/16px 'poppinslight';
+}
+.font-poppinssemibold{
+	font:16px/16px 'poppinssemibold';
+}
+
+.modal{
+	display: none;
+	background: none repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+.modal .modal-bg{
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+    background: none repeat scroll 0 0 rgba(89,31,91,.9);
+	
+}
+.modal .main-content{
+	position: relative;
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: table;
+}
+.modal .main-content .questions-container .character{
+	position: absolute;
+    width: 208px;
+    height: 291px;
+    bottom: 0;
+    left: 50px;
+}
+.ocultar{display: none;}
+.mostrar{display: block;}
+.s-pregunta{background: url("../assets/images/general/s-pregunta.png") no-repeat center center;background-size: 150%;height: 580px !important; width: 295px!important;left: -20px !important;}
+.s-inicio{background: url("../assets/images/general/s-inicio.png") no-repeat center center;width: 330px !important;height: 570px !important;left: -35px !important;background-size: 130%;}
+.s-mala{background: url("../assets/images/general/s-mala.png") no-repeat center center; background-size: 100%;width: 400px !important;height: 540px !important;left: -20px !important;}
+.s-buena{background: url("../assets/images/general/s-buena.png") no-repeat center center;background-size: 100%;width: 380px !important;height: 495px !important;left: -80px !important;}
+.s-fin{background: url("../assets/images/general/s-fin.png") no-repeat center center; background-size: 144%;height: 670px !important;width: 350px !important;left: -10px !important;}
+
+.susana{background: url("../assets/images/general/susana-character.png") no-repeat center center;}
+
+.f-pregunta{background: url("../assets/images/general/f-pregunta.png") no-repeat center center;background-size: 150%;height: 580px !important; width: 295px!important;left: -20px !important;}
+.f-inicio{background: url("../assets/images/general/f-inicio.png") no-repeat center center;width: 330px !important;height: 570px !important;left: -35px !important;background-size: 130%;}
+.f-mala{background: url("../assets/images/general/f-mala.png") no-repeat center center; background-size: 100%;width: 400px !important;height: 540px !important;left: -20px !important;}
+.f-buena{background: url("../assets/images/general/f-buena.png") no-repeat center center;background-size: 100%;width: 400px !important;height: 505px !important;left: -30px !important;}
+.f-fin{background: url("../assets/images/general/f-fin.png") no-repeat center center; background-size: 105%;height: 670px !important;width: 434px !important;left: -35px !important;}
+
+.felix{background: url("../assets/images/general/felix-character.png") no-repeat center center;}
+
+.modal .main-content .questions-container .cloud-msg{
+	position: absolute;
+    width: 679px;
+    height: auto;
+    right: 50px;
+    bottom: 0px;
+    z-index: 2;
+}
+.modal .main-content .questions-container .win-msg{
+	position: absolute;
+    width: 360px;
+    height: 532px;
+    left: 50%;
+    margin-left: -160px;
+    bottom: 50px;
+    z-index: 2;
+    font-family: 'poppinssemibold';
+    text-align: center;
+}
+
+.modal .main-content .questions-container .win-msg #win-msg-bottom{
+	text-align: center;
+    background: url("../assets/images/general/bg-blanco-inferior.png") no-repeat right center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    position: relative;
+}
+.modal .main-content .questions-container .win-msg img#wing-bg{
+	position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+.modal .main-content .questions-container .win-msg .stars-container{
+	position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    background: url("../assets/images/general/bg-general-title-win.png") no-repeat 60% bottom;
+    padding: 0px 0 20px;
+}
+
+.modal .main-content .questions-container .win-msg .stars-container .star{
+	display: inline-block;
+	background: url("../assets/images/general/estrella-big.png") no-repeat center center;
+	width: 134px;
+    height: 134px;
+    margin-bottom: -45px;
+    margin-right: -15px;
+	margin-left: -65px;
+}
+
+.modal .main-content .questions-container .win-msg .stars-container h1{
+	display: inline-block;
+	color: white;
+	font-size: 40px;
+	font-family: 'montserrat_alternatesbold';
+}
+
+.modal .main-content .questions-container .win-msg #win-img{
+	position: relative;
+    z-index: 5;
+    margin: -20px auto 0;
+    text-align: center;
+}
+.modal .main-content .questions-container .win-msg h1.win-title{
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	padding: 0;
+	font-size: 35px;
+	line-height: 10px;
+	margin-bottom: 0;
+}
+
+.modal .main-content .questions-container .win-msg p.win-parragraph{	
+	position: relative;
+	z-index: 1;
+	font: 19px/19px'poppinslight';
+	text-align: center;
+	padding-top: 0;
+}
+
+.modal .main-content .questions-container .win-msg .separator{
+	position: relative;
+	z-index: 1;
+	width: 85%;
+}
+
+.modal .main-content .questions-container .cloud-msg #cloud-msg-top{
+	background: url("../assets/images/general/bg-blanco-superior.png") no-repeat right center;
+	width: 100%;
+    height: 82px;
+    position: relative;
+    z-index: 150;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-top h1{
+	font: 34px/38px 'poppinssemibold';
+    color: #8e4289;
+    margin: 0;
+    padding-top: 39px;
+    text-align: center;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content{
+	background: url("../assets/images/general/bg-blanco-repite.png") repeat-y right center;
+	width: 100%;
+    height: auto;
+}
+.modal.preguntas .main-content .questions-container .cloud-msg #cloud-msg-content{
+    position: relative;
+    z-index: 151;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content h1{
+	font: 33px/38px 'poppinssemibold';
+    color: #8e4289;
+    margin: -10px 0 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+form#respuestas {
+    color: #9f6298;
+    display: block;
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    font-size: 18px;
+    width: 76%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+form#respuestas input[type=radio]{
+	margin: 15px 0 0 0;
+	display: none;
+}
+form#respuestas input[type=radio]:checked + label:before {
+    content: "";
+    background-position: bottom center;
+    width: 22px;
+    height: 22px;
+    /*color: #9d6195;
+    content: "\2022";
+    font-size: 47px;
+    text-align: center;
+    line-height: 22px;
+    padding-right: 3px;*/
+}
+
+form#respuestas label{
+	cursor: pointer;	
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    margin-right: 15px;
+    font: 19px/19px "poppinslight";
+}
+
+form#respuestas label:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../assets/images/general/radio-bg.png") center top;
+    /*box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(232, 228, 213, 1);*/
+    border-radius: 50%;
+    padding: 0;
+}
+
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content .teclado{
+	background: url("../assets/spritesheets/teclado.png") no-repeat center center;
+	display: inline-block;
+	width: 191px;
+    height: 152px;
+    margin-bottom: -60px;
+    margin-top: -8px;
+}
+.separator{
+	width: 518px;
+    height: 10px;
+    padding: 0;
+    margin: 10px auto 5px;
+	/*border-bottom: dotted;*/
+	background: url("../assets/images/general/separador.png") repeat-x center center;
+	/*color: #8e4289;*/
+}
+.white{
+	background: url("../assets/images/general/separador-blanco.png") repeat-x center center;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content p{
+	font: 18px/19px 'poppinslight';
+    color: #8e4289;
+    margin: 0;
+    padding-top: 24px;
+    text-align: center;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content .items{
+	display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content .items .item{
+	display: inline-block;
+	background: url("../assets/images/general/bg-item-popup.png") no-repeat center center;
+	background-size: contain;
+	position: relative;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-content .items .item .check{
+	width: 44px;
+	height: 46px;
+	background: url("../assets/images/banhar/icon-check.png");
+	background-position: center top;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.check.no-ok{
+	background-position: center bottom !important;
+}
+.botonPop{
+	font: 22px/22px 'poppinssemibold' ;
+	background: url("../assets/images/general/bg-validate-btn-pop.png") no-repeat center center;
+	color: white;
+	width: 301px;
+	height: 53px;
+	margin: 0 auto;
+	border: 0;
+	outline: none;
+	text-shadow: -1px 1px 2px #290a28;
+	cursor: pointer;
+	margin: 47px auto;
+}
+
+.botonPopPreguntas{
+	font: 22px/22px 'montserrat_alternatesbold' ;
+	background: url("../assets/images/general/bg-validate-pregunta-pop.png") no-repeat center center;
+	color: white;
+	width: 163px;
+	height: 60px;
+	margin: 0 auto;
+	border: 0;
+	outline: none;
+	text-shadow: -1px 1px 2px #290a28;
+	cursor: pointer;
+	margin: 30px auto;	
+}
+
+.botonPop.win-btn{
+	margin: -30px auto;
+}
+.modal .main-content .questions-container .cloud-msg #cloud-msg-bottom{	
+	text-align: center;
+    background: url("../assets/images/general/bg-blanco-inferior.png") no-repeat right center;
+    width: 100%;
+    height: 162px;
+    margin: 0;
+    padding: 0;
+}
+.modal.preguntas .main-content .questions-container .cloud-msg #cloud-msg-bottom{
+	position: relative;	
+}
+.modal.preguntas .main-content .questions-container .cloud-msg #cloud-msg-bottom p#error-msg{
+	position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: red;
+    top: 14px;
+    display: none;
+}
+
